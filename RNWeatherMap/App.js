@@ -9,6 +9,8 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
+import MapView from './src/iosMap/mapView.js';
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -20,11 +22,15 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+        <View style={styles.container}>
+
+          <MapView style={styles.mapView}/>
+          <Text>手动导入</Text>
+
+          {/*<Text style={styles.welcome}>Welcome to React Native!</Text>*/}
+          {/*<Text style={styles.instructions}>To get started, edit App.js</Text>*/}
+          {/*<Text style={styles.instructions}>{instructions}</Text>*/}
+        </View>
     );
   }
 }
@@ -35,6 +41,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+  },
+  mapView: {
+    flex: 1,
+    height: '100%',
+    width: '100%'
   },
   welcome: {
     fontSize: 20,
