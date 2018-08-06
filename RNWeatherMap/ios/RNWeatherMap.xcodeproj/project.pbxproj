@@ -516,6 +516,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2200A8C921183FE400F12EA4 /* JYMap */ = {
+			isa = PBXGroup;
+			children = (
+				2200A8CB2118401300F12EA4 /* AMapSDK */,
+				2200A8CA2118400900F12EA4 /* Lib */,
+			);
+			path = JYMap;
+			sourceTree = "<group>";
+		};
+		2200A8CA2118400900F12EA4 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		2200A8CB2118401300F12EA4 /* AMapSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AMapSDK;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +596,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				2200A8C921183FE400F12EA4 /* JYMap */,
 				13B07FAE1A68108700A75B9A /* RNWeatherMap */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNWeatherMapTests */,
