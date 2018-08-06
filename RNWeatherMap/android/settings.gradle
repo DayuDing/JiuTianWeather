@@ -1,0 +1,3 @@
+rootProject.name = 'RNWeatherMap'
+
+include ':app'
